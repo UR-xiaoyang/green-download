@@ -1,0 +1,1177 @@
+<!--菜单搜索功能-->
+<!--先写静态页面-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Green-download</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            padding: 10px;
+        }
+        
+        .dnav {
+            float: left;
+            padding: 5px;
+            background: grey;
+        }
+        
+        .dnav ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 0px;
+        }
+        
+        .dnav ul li {
+            height: 20px;
+        }
+        
+        .dnav ul li a {
+            padding: 10px;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block
+        }
+        
+        .dnav ul li a:hover {
+            color: white;
+        }
+        
+        .dnav input {
+            width: 100%;
+            font-size: 18px;
+            padding: 11px;
+            border: 1px solid #ddd;
+        }
+        
+        .content {
+            float: left;
+            width: 70%;
+            padding: 5px;
+            background: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--左右布局的实例-->
+        <div class="dnav">
+            <nav class="nav">
+                <h2>索引
+                    <h2>
+                        <input placeholder="请输入关键字" id="mysearch" onkeyup="search()">
+                        <ul>
+                            <LI>
+                                <a href="javascript:history.back(-1)">BACK</a>
+                            </LI>
+                        </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>----Eclipse----</h1>
+            <h2>_Sketch></h2>
+            <h3>CN:</h3>
+            <p>
+                Eclipse Babel项目。Eclipse是一个全球社区。确保Eclipse可用并在尽可能多的语言环境中进行翻译符合每个人的利益。
+            </p>
+            <H3>EN:</H3>
+            <p>
+                clipse Babel Project. Eclipse is a global community. It is in everyone's interest to ensure that Eclipse is available and translated in as many locales as possible.
+                <h2>install[安装]</h2>
+
+                <p>
+                    [en]What to fill under "work with"：https://download.eclipse.org/technology/babel/update-site/[Version number]/[update day]/
+                </p>
+                <p>
+                    [cn]在work with下填写的内容：https://download.eclipse.org/technology/babel/update-site/[版本号]/[更新日期]/
+
+                </p>
+            </p>
+            <h2>Version number[版本号]</h2>
+            <div>
+                <div id="midcolumn">
+                    <h1>Eclipse Babel Project Archived Downloads</h1>
+
+                    <h2>
+                        <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.18.2/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.18.2</a> (2020/12/26)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.18.2/2020-12/2020-12.php">2020-12</a> |
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.18.2/2020-09/2020-09.php">2020-09</a> |
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.18.2/2020-06/2020-06.php">2020-06</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2020-12</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.18.2/2020-12/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.18.2/babel-R0.18.2-2020-12.zip">Zipped p2 repository for 2020-12 (153 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2020-09</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.18.2/2020-09/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.18.2/babel-R0.18.2-2020-09.zip">Zipped p2 repository for 2020-09 (149 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2020-06</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.18.2/2020-06/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.18.2/babel-R0.18.2-2020-06.zip">Zipped p2 repository for 2020-06 (145 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.18.1/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.18.1</a> (2020/10/14)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.18.1/2020-09/2020-09.php">2020-09</a> |
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.18.1/2020-06/2020-06.php">2020-06</a> |
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.18.1/2019-12/2019-12.php">2019-12</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2020-09</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.18.1/2020-09/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.18.1/babel-R0.18.1-2020-09.zip">Zipped p2 repository for 2020-09 (149 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2020-06</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.18.1/2020-06/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.18.1/babel-R0.18.1-2020-06.zip">Zipped p2 repository for 2020-06 (145 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2019-12</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.18.1/2019-12/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.18.1/babel-R0.18.1-2019-12.zip">Zipped p2 repository for 2019-12 (138 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.18.0/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.18.0</a> (2020/07/15)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.18.0/2020-06/2020-06.php">2020-06</a> |
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.18.0/2019-12/2019-12.php">2019-12</a> |
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.18.0/2019-06/2019-06.php">2019-06</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2020-06</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.18.0/2020-06/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.18.0/babel-R0.18.0-2020-06.zip">Zipped p2 repository for 2020-06 (163 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2019-12</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.18.0/2019-12/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.18.0/babel-R0.18.0-2019-12.zip">Zipped p2 repository for 2019-12 (138 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2019-06</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.18.0/2019-06/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.18.0/babel-R0.18.0-2019-06.zip">Zipped p2 repository for 2019-06 (120 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.17.1/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.17.1</a> (2020/01/15)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.17.1/2019-12/2019-12.php">2019-12</a> |
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.17.1/2019-06/2019-06.php">2019-06</a> |
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.17.1/2018-12/2018-12.php">2018-12</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2019-12</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.17.1/2019-12/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.17.1/babel-R0.17.1-2019-12.zip">Zipped p2 repository for 2019-12 (148 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2019-06</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.17.1/2019-06/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.17.1/babel-R0.17.1-2019-06.zip">Zipped p2 repository for 2019-06 (119 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2018-12</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.17.1/2018-12/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.17.1/babel-R0.17.1-2018-12.zip">Zipped p2 repository for 2018-12 (120 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.17.0/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.17.0</a> (2019/07/13)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.17.0/2019-06/2019-06.php">2019-06</a> |
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.17.0/2018-12/2018-12.php">2018-12</a> |
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.17.0/photon/photon.php">Photon</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2019-06</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.17.0/2019-06/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.17.0/babel-R0.17.0-2019-06.zip">Zipped p2 repository for 2019-06 (141 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2018-12</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.17.0/2018-12/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.17.0/babel-R0.17.0-2018-12.zip">Zipped p2 repository for 2018-12 (136 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Photon</b><br />https://archive.eclipse.org/technology/babel/update-site/R0.17.0/photon/<br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.17.0/babel-R0.17.0-photon.zip">Zipped p2 repository for Photon (128 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.16.1/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.16.1</a> (2019/01/26)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.16.1/2018-12/2018-12.php">2018-12</a> |
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.16.1/photon/photon.php">Photon</a> |
+                                <a href="https://archive.eclipse.org/technology/babel/babel_language_packs/R0.16.1/oxygen/oxygen.php">Oxygen</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for 2018-12</b><br /> https://archive.eclipse.org/technology/babel/update-site/R0.16.1/2018-12/
+                                <br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.16.1/babel-R0.16.1-2018-12.zip">Zipped p2 repository for 2018-12 (140 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Photon</b><br /> https://archive.eclipse.org/technology/babel/update-site/R0.16.1/photon/
+                                <br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.16.1/babel-R0.16.1-photon.zip">Zipped p2 repository for Photon (128 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Oxygen</b><br /> https://archive.eclipse.org/technology/babel/update-site/R0.16.1/oxygen/
+                                <br />
+                                <a href="https://archive.eclipse.org/technology/babel/update-site/R0.16.1/babel-R0.16.1-oxygen.zip">Zipped p2 repository for Oxygen (131 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.16.0/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.16.0</a> (2018/08/15)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.16.0/photon/photon.php">Photon</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.16.0/oxygen/oxygen.php">Oxygen</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.16.0/neon/neon.php">Neon</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Photon</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.16.0/photon/
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.16.0/babel-R0.16.0-photon.zip">Zipped p2 repository for Photon (139 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Oxygen</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.16.0/oxygen/
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.16.0/babel-R0.16.0-oxygen.zip">Zipped p2 repository for Oxygen (131 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Neon</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.16.0/neon/
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.16.0/babel-R0.16.0-neon.zip">Zipped p2 repository for Neon (129 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.15.1/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.15.1</a> (2017/12/31)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.15.1/oxygen/oxygen.php">Oxygen</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.15.1/neon/neon.php">Neon</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.15.1/mars/mars.php">Mars</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Oxygen</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.15.1/Oxygen
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.15.1/babel-R0.15.1-oxygen.zip">Zipped p2 repository for Oxygen (131 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Neon</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.15.1/neon
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.15.1/babel-R0.15.1-neon.zip">Zipped p2 repository for Neon (129 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Mars</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.15.1/mars
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.15.1/babel-R0.15.1-mars.zip">Zipped p2 repository for Mars (143 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.15.0/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.15.0</a> (2017/08/19)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.15.0/oxygen/oxygen.php">Oxygen</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.15.0/neon/neon.php">Neon</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.15.0/mars/mars.php">Mars</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Oxygen</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.15.0/Oxygen
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.15.0/babel-R0.15.0-oxygen.zip">Zipped p2 repository for Oxygen (117 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Neon</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.15.0/neon
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.15.0/babel-R0.15.0-neon.zip">Zipped p2 repository for Neon (116 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Mars</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.15.0/mars
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.15.0/babel-R0.15.0-mars.zip">Zipped p2 repository for Mars (143 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.14.1/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.14.1</a> (2016/11/26)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.14.1/neon/neon.php">Neon</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.14.1/mars/mars.php">Mars</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.14.1/luna/luna.php">Luna</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Neon</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.14.1/neon
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.14.1/babel-R0.14.1-neon.zip">Zipped p2 repository for Neon (115 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Mars</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.14.1/mars
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.14.1/babel-R0.14.1-mars.zip">Zipped p2 repository for Mars (146 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Luna</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.14.1/Luna
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.14.1/babel-R0.14.1-luna.zip">Zipped p2 repository for Luna (112 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.14.0/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.14.0</a> (2016/08/15)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.14.0/neon/neon.php">Neon</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.14.0/mars/mars.php">Mars</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.14.0/luna/luna.php">Luna</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Neon</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.14.0/neon
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.14.0/babel-R0.14.0-neon.zip">Zipped p2 repository for Neon (115 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Mars</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.14.0/mars
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.14.0/babel-R0.14.0-mars.zip">Zipped p2 repository for Mars (146 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Luna</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.14.0/Luna
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.14.0/babel-R0.14.0-luna.zip">Zipped p2 repository for Luna (112 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.13.1/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.13.1</a> (2015/11/28)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.13.1/mars/mars.php">Mars</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.13.1/luna/luna.php">Luna</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.13.1/kepler/kepler.php">Kepler</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Mars</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.13.1/mars
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.13.1/babel-R0.13.1-mars.zip">Zipped p2 repository for Mars (131 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Luna</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.13.1/Luna
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.13.1/babel-R0.13.1-luna.zip">Zipped p2 repository for Luna (108 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Kepler</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.13.1/kepler
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.13.1/babel-R0.13.1-kepler.zip">Zipped p2 repository for Keper (135 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.13.0/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.13.0</a> (2015/08/04)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.13.0/mars/mars.php">Mars</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.13.0/luna/luna.php">Luna</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.13.0/kepler/kepler.php">Kepler</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Mars</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.13.0/mars
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.13.0/babel-R0.13.0-mars.zip">Zipped p2 repository for Mars (114 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Luna</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.13.0/Luna
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.13.0/babel-R0.13.0-luna.zip">Zipped p2 repository for Luna (108 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Kepler</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.13.0/kepler
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.13.0/babel-R0.13.0-kepler.zip">Zipped p2 repository for Keper (135 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.12.1/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.12.1</a> (2014/12/23)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.12.1/luna/luna.php">Luna</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.12.1/kepler/kepler.php">Kepler</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.12.1/juno/juno.php">Juno</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Luna</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.12.1/Luna
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.12.1/babel-R0.12.1-luna.zip">Zipped p2 repository for Luna (113 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Kepler</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.12.1/kepler
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.12.1/babel-R0.12.1-kepler.zip">Zipped p2 repository for Kepler (135 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Juno</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.12.1/juno
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.12.1/babel-R0.12.1-juno.zip">Zipped p2 repository for Juno (149 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Orion Language Packs</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/orion_language_packs/R0.12.1/luna/luna.php">Luna</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/orion_language_packs/R0.12.1/kepler/kepler.php">Kepler</a>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                    <h2>
+                        <a ref="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.12.0/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.12.0</a> (2014/06/23)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.12.0/luna/luna.php">Luna</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.12.0/kepler/kepler.php">Kepler</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.12.0/juno/juno.php">Juno</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Luna</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.12.0/Luna
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.12.0/babel-R0.12.0-luna.zip">Zipped p2 repository for Luna (84 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Kepler</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.12.0/kepler
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.12.0/babel-R0.12.0-kepler.zip">Zipped p2 repository for Kepler (134 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Juno</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.12.0/juno
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.12.0/babel-R0.12.0-juno.zip">Zipped p2 repository for Juno (148 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Orion Language Packs</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/orion_language_packs/R0.12.0/luna/luna.php">Luna</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/orion_language_packs/R0.12.0/kepler/kepler.php">Kepler</a>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.11.1/index.php">
+                        Babel Language Pack Zips and Update Sites - R0.11.1</a> (2013/11/23)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.11.1/kepler/kepler.php">Kepler</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.11.1/juno/juno.php">Juno</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.11.1/indigo/indigo.php">Indigo</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Kepler</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.11.1/kepler
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.11.1/babel-R0.11.1-kepler.zip">Zipped p2 repository for Kepler (130 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Juno</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.11.1/juno
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.11.1/babel-R0.11.1-juno.zip">Zipped p2 repository for Juno (146 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Indigo</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.11.1/indigo
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.11.1/babel-R0.11.1-indigo.zip">Zipped p2 repository for Indigo (140 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Orion Language Packs</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/orion_language_packs/R0.11.1/kepler/kepler.php">Kepler</a>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>
+                        <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.11.0/index.php">
+                                    Babel Language Pack Zips and Update Sites - R0.11.0</a> (2013/07/24)
+                    </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.11.0/kepler/kepler.php">Kepler</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.11.0/juno/juno.php">Juno</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.11.0/indigo/indigo.php">Indigo</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Kepler</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.11.0/kepler
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.11.0/babel-R0.11.0-kepler.zip">Zipped p2 repository for Kepler (110 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Juno</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.11.0/juno
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.11.0/babel-R0.11.0-juno.zip">Zipped p2 repository for Juno (144 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Indigo</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.11.0/indigo
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.11.0/babel-R0.11.0-indigo.zip">Zipped p2 repository for Indigo (138 MB)</a><b />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Orion Language Packs</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/orion_language_packs/R0.11.0/kepler/kepler.php">Kepler</a>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>Babel Language Pack Zips and Update Sites - R0.10.1 (2012/11/20)</h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.10.1/juno/juno.php">Juno</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.10.1/indigo/indigo.php">Indigo</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.10.1/helios/helios.php">Helios</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Juno</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.10.1/juno
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.10.1/babel-R0.10.1-juno.zip">Zipped p2 repository for Juno (135 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Indigo</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.10.1/indigo
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.10.1/babel-R0.10.1-indigo.zip">Zipped p2 repository for Indigo (124 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Helios</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.10.1/helios
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.10.1/babel-R0.10.1-helios.zip">Zipped p2 repository for Helios (138 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>Babel Language Pack Zips and Update Sites - R0.10.0 (2012/07/21)</h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.10.0/juno/juno.php">Juno</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.10.0/indigo/indigo.php">Indigo</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.10.0/helios/helios.php">Helios</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Juno</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.10.0/juno
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.10.0/babel-R0.10.0-juno.zip">Zipped p2 repository for Juno (109 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Indigo</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.10.0/indigo
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.10.0/babel-R0.10.0-indigo.zip">Zipped p2 repository for Indigo (117 MB)</a><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Helios</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.10.0/helios
+                                <br />
+                                <a href="http://archive.eclipse.org/technology/babel/update-site/R0.10.0/babel-R0.10.0-helios.zip">Zipped p2 repository for Helios (131 MB)</a><br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>Babel Language Pack Zips and Update Sites - R0.9.1 (2011/11/28)</h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.9.1/indigo/indigo.php">Indigo</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.9.1/helios/helios.php">Helios</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.9.1/galileo/galileo.php">Galileo</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Indigo</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.9.1/indigo
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Helios</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.9.1/helios
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Galileo</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.9.1/galileo
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>Babel Language Pack Zips and Update Sites - R0.9.0 (2011/07/23)</h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.9.0/indigo/indigo.php">Indigo</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.9.0/helios/helios.php">Helios</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.9.0/galileo/galileo.php">Galileo</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Indigo</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.9.0/indigo
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Helios</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.9.0/helios
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Galileo</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.9.0/galileo
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>Babel Language Pack Zips and Update Sites - R0.8.1 (2010/12/11)</h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.8.1/helios.php">Helios</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.8.1/galileo.php">Galileo</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.8.1/ganymede.php">Ganymede</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.8.1/europa.php">Europa</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Helios</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.8.1/helios
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Galileo</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.8.1/galileo
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Ganymede</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.8.1/ganymede
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Europa</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.8.1/europa
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>Babel Language Pack Zips and Update Sites - R0.8.0 (2010/08/14)</h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.8.0/helios.php">Helios</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.8.0/galileo.php">Galileo</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.8.0/ganymede.php">Ganymede</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.8.0/europa.php">Europa</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Helios</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.8.0/helios
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Galileo</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.8.0/galileo
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Ganymede</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.8.0/ganymede
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Europa</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.8.0/europa
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>Babel Language Pack Zips and Update Sites - R0.7.1 (2009/11/21)</h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.7.1/galileo.php">Galileo</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.7.1/ganymede.php">Ganymede</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.7.1/europa.php">Europa</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Galileo</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.7.1/galileo
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Ganymede</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.7.1/ganymede
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Europa</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.7.1/europa
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>Babel Language Pack Zips and Update Sites - R0.7.0 (2009/06/20)</h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2" valign="top"><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td><b>Babel Language Pack Zips</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.7.0/galileo.php">Galileo</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.7.0/ganymede.php">Ganymede</a> |
+                                <a href="http://archive.eclipse.org/technology/babel/babel_language_packs/R0.7.0/europa.php">Europa</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Galileo</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.7.0/galileo
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Ganymede</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.7.0/ganymede
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://dev.eclipse.org/large_icons/actions/go-bottom.png" /></td>
+                            <td>
+                                <b>Babel Language Pack Update Site for Europa</b><br /> http://archive.eclipse.org/technology/babel/update-site/R0.7.0/europa
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+
+        </p>
+    </div>
+    <script>
+        //功能：主要是过滤，通过转换为大写toUpperCase,然后用indexOff来查询返回字符串位子，无就返回-1
+        function search() {
+            var input = document.getElementById("mysearch").value;
+            var li = document.getElementsByTagName("li");
+            var fliter = input.toUpperCase();
+            for (var i = 0; i < li.length; i++) {
+                if (li[i].innerHTML.toUpperCase().indexOf(fliter) > -1) {
+                    li[i].style.display = "block";
+                } else {
+                    li[i].style.display = "none";
+                }
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!--菜单搜索功能-->
+<!--先写静态页面-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Green-download</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            padding: 10px;
+        }
+        
+        .dnav {
+            float: left;
+            padding: 5px;
+            background: grey;
+        }
+        
+        .dnav ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 0px;
+        }
+        
+        .dnav ul li {
+            height: 20px;
+        }
+        
+        .dnav ul li a {
+            padding: 10px;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block
+        }
+        
+        .dnav ul li a:hover {
+            color: white;
+        }
+        
+        .dnav input {
+            width: 100%;
+            font-size: 18px;
+            padding: 11px;
+            border: 1px solid #ddd;
+        }
+        
+        .content {
+            float: left;
+            width: 70%;
+            padding: 5px;
+            background: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--左右布局的实例-->
+        <div class="dnav">
+            <nav class="nav">
+                <h2>索引
+                    <h2>
+                        <input placeholder="请输入关键字" id="mysearch" onkeyup="search()">
+                        <ul>
+                            <LI>
+                                <a href="javascript:history.back(-1)">BACK</a>
+                            </LI>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>----Eclipse----</h1>
+            <h2>_plug-in unit[插件]></h2>
+            <h3>CN:</h3>
+            <p>Eclipse的插件机制是轻型软件组件化架构。在富客户机平台上，Eclipse使用插件来提供所有的附加功能，例如支持Java以外的其他语言。已有的分离的插件已经能够支持C/C++（CDT）、PHP、Perl、Ruby，Python、telnet和数据库开发。插件架构能够支持将任意的扩展加入到现有环境中，例如配置管理，而决不仅仅限于支持各种编程语言。 Eclipse的设计思想是：一切皆插件。Eclipse核心很小，其它所有功能都以插件的形式附加于Eclipse核心之上。Eclipse基本内核包括：图形API（SWT/Jface），Java开发环境插件（JDT），插件开发环境（PDE）等。
+                框架的本质与极高的扩展性，使得厂商可以利用Eclipse作为平台开发各类IDE。甚至一些应用软件也是基于Eclipse的，如Oracle JDK自带的监控程序、Android SDK附带的设备监视工具DDMS。</p>
+            <H3>EN:</H3>
+            <P>The plug-in mechanism of eclipse is light software component architecture. On the rich client platform, eclipse uses plug-ins to provide all the additional functions, such as supporting languages other than Java. The existing plug-ins can
+                support C / C + + (CDT), PHP, Perl, ruby, python, telnet and database development. Plug in architecture can support any extension to the existing environment, such as configuration management, and is not limited to supporting various programming
+                languages. The design idea of eclipse is: everything is plug-in. The eclipse core is very small, and all other functions are attached to the eclipse core in the form of plug-ins. The basic kernel of eclipse includes graphic API (SWT /
+                Jface), java development environment plug-in (JDT), plug-in development environment (PDE), etc. The essence and high extensibility of the framework make it possible for vendors to use eclipse as a platform to develop various ides. Even
+                some applications are based on eclipse, such as the monitoring program of Oracle JDK and the device monitoring tool DDMS of Android SDK.
+                <h2>install[安装]</h2>
+                <h3>CN:</h3>
+                <H4>
+                    <p>
+                        打开 eclipse,导航到 help -> install new software，在 work with 中输入下载好的插件安装包地址
+                    </p>
+                    <p>
+                        输入的地址根目录下需要有插件的配置说明文件，比如 site.xml、artifacts.xml、content.xml 等，一般官方下载的插件离线安装包都有类似文件
+                    </p>
+
+                    <P>
+
+                        输入的地址可以是一个本地目录，如 file:/d:/subclipse-site-1.10.9/site-1.10.9/，也可以是一个远程目录，如 http://xxx.com/subclipse-1.6/ 也可以是一个压缩包，压缩包地址后面需要跟一个感叹号，如 jar:file:/d:/subclipse-site-1.10.9.zip!/，如果压缩包中有子目录，还需要根上子目录地址，如 jar:file:/d:/subclipse-site-1.10.9.zip!/site-1.10.9 压缩包可以是本地地址，也可以是远程地址，如
+                        jar:http://xxx.com/subclipse-site-1.10.9.zip!/site-1.10.9
+                    </P>
+                </H4>
+                <H3>EN:</H3>
+                <h4>
+                    <p>[EN] open eclipse, navigate to "help" > "install new software", and enter the address of the downloaded plug-in installation package in "work with"</p>
+
+                    <p>The root directory of the input address needs to have the configuration files of the plug-in, such as "site.xml", "artifacts.xml", "content.xml", etc. generally, the offline installation package of the plug-in officially downloaded
+                        has similar files
+                    </p>
+                    <p>
+                        The address you enter can be a local directory, such as "file:/D:/subclipse-site-1.10.9/site-1.10.9/", or a remote directory, such as "http://xxx.com/subclipse-1.6/"It can also be a compressed package. The compressed package address needs to be followed
+                        by an exclamation point, such as "jar:file :/d:/subclipse-site-1.10.9.zip!/"， If there are subdirectories in the compressed package, the address of the subdirectory on the root is also required, such as "jar:file :/d:/subclipse-site-1.10.9.zip!/"
+                        The site-1.10.9 package can be a local address or a remote address, such as "jar:http ://xxx.com/subclipse-site-1.10.9.zip!/ site-1.10.9"
+                    </p>
+                </h4>
+        </div>
+
+    </div>
+    <script>
+        //功能：主要是过滤，通过转换为大写toUpperCase,然后用indexOff来查询返回字符串位子，无就返回-1
+        function search() {
+            var input = document.getElementById("mysearch").value;
+            var li = document.getElementsByTagName("li");
+            var fliter = input.toUpperCase();
+            for (var i = 0; i < li.length; i++) {
+                if (li[i].innerHTML.toUpperCase().indexOf(fliter) > -1) {
+                    li[i].style.display = "block";
+                } else {
+                    li[i].style.display = "none";
+                }
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

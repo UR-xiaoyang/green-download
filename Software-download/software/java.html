@@ -1,0 +1,117 @@
+<!--菜单搜索功能-->
+<!--先写静态页面-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Green-download</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            padding: 10px;
+        }
+        
+        .dnav {
+            float: left;
+            padding: 5px;
+            background: grey;
+        }
+        
+        .dnav ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 0px;
+        }
+        
+        .dnav ul li {
+            height: 20px;
+        }
+        
+        .dnav ul li a {
+            padding: 10px;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block
+        }
+        
+        .dnav ul li a:hover {
+            color: white;
+        }
+        
+        .dnav input {
+            width: 100%;
+            font-size: 18px;
+            padding: 11px;
+            border: 1px solid #ddd;
+        }
+        
+        .content {
+            float: left;
+            width: 70%;
+            padding: 5px;
+            background: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--左右布局的实例-->
+        <div class="dnav">
+            <nav class="nav">
+                <h2>索引
+                    <h2>
+                        <input placeholder="请输入关键字" id="mysearch" onkeyup="search()">
+                        <ul>
+                            <LI>
+                                <a href="javascript:history.back(-1)">BACK</a>
+                            </LI>
+                        </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Download java</h1>
+            <h2>what is java?</h2>
+            <h3>Java allows you to play online games, chat with people around the world, calculate your mortgage interest, and view images in 3D, just to name a few. It's also integral to the intranet applications and other e-business solutions that are the
+                foundation of corporate computing.</h3>
+            <h2>Download</h2>
+            <h3>JAVA SE 16</h3>
+            <H4>度盘:</H4>
+            <h5>链接： <a href="https://pan.baidu.com/s/1apsvoNjy6cMq2evqSzwQqQ">https://pan.baidu.com/s/1apsvoNjy6cMq2evqSzwQqQ</a> 提取码：1234
+            </h5>
+            <h4>official:</h4>
+            <h5><a href="https://www.oracle.com/java/technologies/javase-jdk16-downloads.html">https://www.oracle.com/java/technologies/javase-jdk16-downloads.html</a></h5>
+            <h3>JAVA SE 8u291</h3>
+            <H4>度盘:</H4>
+            <h5>链接： <a href="https://pan.baidu.com/s/1apsvoNjy6cMq2evqSzwQqQ">https://pan.baidu.com/s/1apsvoNjy6cMq2evqSzwQqQ</a> 提取码：1234
+            </h5>
+            <h4>official:</h4>
+            <h5><a href="https://www.oracle.com/java/technologies/javase-jdk8-downloads.html">https://www.oracle.com/java/technologies/javase-jdk8-downloads.html</a></h5>
+
+        </div>
+        <script>
+            //功能：主要是过滤，通过转换为大写toUpperCase,然后用indexOff来查询返回字符串位子，无就返回-1
+            function search() {
+                var input = document.getElementById("mysearch").value;
+                var li = document.getElementsByTagName("li");
+                var fliter = input.toUpperCase();
+                for (var i = 0; i < li.length; i++) {
+                    if (li[i].innerHTML.toUpperCase().indexOf(fliter) > -1) {
+                        li[i].style.display = "block";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+
+                }
+
+            }
+        </script>
+</body>
+
+</html>

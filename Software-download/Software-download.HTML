@@ -69,44 +69,38 @@
                     <h2>
                         <input placeholder="请输入关键字" id="mysearch" onkeyup="search()">
                         <ul>
-                            <li><a href="./index/Eclipse.html">Eclipse[java IDE]</a></li>
-                            <li><a href="./Software-download/Software-download.HTML">软件下载[Software download]</a></li>
+                            <LI>
+                                <a href="javascript:history.back(-1)">BACK</a>
+                            </LI>
+                            <li>
+                                <a href="./software/java.html">Java</a>
+                            </li>
                         </ul>
             </nav>
         </div>
         <div class="content">
-            <h1>----Welcome----</h1>
-            <h2>_UPLOAD-log></h2>
-            <h3>2021-5-3 upload</h3>
-            <p>Added "Babel Language"</p>
-            <h3>2021-5-3 upload</h3>
-            <p>
-                Added "JavaFX Scene Builder"
-            </p>
-            <h3>2021-5-3 upload</h3>
-            <p>
-                Added "Eclipse & Eclpise's plug-in unit"
-            </p>
+            <h1>>Software_</h1>
+            <H2>_UPLOAD-log></H2>
+            <H3>add "JAVA.exe"</H3>
 
         </div>
-    </div>
-    <script>
-        //功能：主要是过滤，通过转换为大写toUpperCase,然后用indexOff来查询返回字符串位子，无就返回-1
-        function search() {
-            var input = document.getElementById("mysearch").value;
-            var li = document.getElementsByTagName("li");
-            var fliter = input.toUpperCase();
-            for (var i = 0; i < li.length; i++) {
-                if (li[i].innerHTML.toUpperCase().indexOf(fliter) > -1) {
-                    li[i].style.display = "block";
-                } else {
-                    li[i].style.display = "none";
+        <script>
+            //功能：主要是过滤，通过转换为大写toUpperCase,然后用indexOff来查询返回字符串位子，无就返回-1
+            function search() {
+                var input = document.getElementById("mysearch").value;
+                var li = document.getElementsByTagName("li");
+                var fliter = input.toUpperCase();
+                for (var i = 0; i < li.length; i++) {
+                    if (li[i].innerHTML.toUpperCase().indexOf(fliter) > -1) {
+                        li[i].style.display = "block";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+
                 }
 
             }
-
-        }
-    </script>
+        </script>
 </body>
 
 </html>

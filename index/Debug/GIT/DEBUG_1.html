@@ -1,0 +1,124 @@
+<!--菜单搜索功能-->
+<!--先写静态页面-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Green-download</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            padding: 10px;
+        }
+        
+        .dnav {
+            float: left;
+            padding: 5px;
+            background: grey;
+        }
+        
+        .dnav ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 0px;
+        }
+        
+        .dnav ul li {
+            height: 20px;
+        }
+        
+        .dnav ul li a {
+            padding: 10px;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block
+        }
+        
+        .dnav ul li a:hover {
+            color: white;
+        }
+        
+        .dnav input {
+            width: 100%;
+            font-size: 18px;
+            padding: 11px;
+            border: 1px solid #ddd;
+        }
+        
+        .content {
+            float: left;
+            width: 70%;
+            padding: 5px;
+            background: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--左右布局的实例-->
+        <div class="dnav">
+            <nav class="nav">
+                <h2>索引
+                    <h2>
+                        <input placeholder="请输入关键字" id="mysearch" onkeyup="search()">
+                        <ul>
+                            <LI>
+                                <a href="javascript:history.back(-1)">BACK</a>
+                            </LI>
+                        </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>在克隆时出现“Failed to connect to github.com port 443: Timed out”</h1>
+            <h2>解决方案</h2>
+            <h3>
+                <p>方案1：git config --global http.sslVerify "false" 修改设置解除ssl验证 </p>
+                <p>方案2：git config --global core.longpaths true 文件名或路径太长
+                </p>
+            </h3>
+            <h2>实例</h2>
+            <h3>输出日志
+                <p>
+                    <br> $ git clone https://github.com/green-download.git
+                    <br> Cloning into 'green-download'... fatal: unable to access 'https://github.com/green-download.git/': Failed to connect to github.com port 443: Timed out
+                    <br>$ git config --global core.longpaths true
+                    <br>$ git clone https://github.com/bilibili-xiaoyang/green-download.git
+                    <br> Cloning into 'green-download'...
+                    <br>remote: Enumerating objects: 51, done.
+                    <br> remote: Counting objects: 100% (51/51), done.
+                    <br> remote: Compressing objects: 100% (35/35), done.
+                    <br> remote: Total 51 (delta 22), reused 38 (delta 13), pack-reused 0
+                    <br>Receiving objects: 100% (51/51), 29.15 KiB | 261.00 KiB/s, done.
+                    <br>Resolving deltas: 100% (22/22), done.
+
+
+                </p>
+            </h3>
+        </div>
+        <script>
+            //功能：主要是过滤，通过转换为大写toUpperCase,然后用indexOff来查询返回字符串位子，无就返回-1
+            function search() {
+                var input = document.getElementById("mysearch").value;
+                var li = document.getElementsByTagName("li");
+                var fliter = input.toUpperCase();
+                for (var i = 0; i < li.length; i++) {
+                    if (li[i].innerHTML.toUpperCase().indexOf(fliter) > -1) {
+                        li[i].style.display = "block";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+
+                }
+
+            }
+        </script>
+</body>
+
+</html>
